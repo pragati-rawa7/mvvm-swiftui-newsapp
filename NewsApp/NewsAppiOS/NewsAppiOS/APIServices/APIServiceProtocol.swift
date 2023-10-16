@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol APIServiceProtocol {
-   // func executeAPI<T: Decodable>(endPoint: APIEndpoint) async throws -> Result<T?, FetchError<Any>>
-    
+protocol APIServiceProtocol {    
     func request<T: Codable>(session: URLSession,
                              _ endpoint: APIEndpoint,
                              type: T.Type) async throws -> Result<T?, NetworkingError>

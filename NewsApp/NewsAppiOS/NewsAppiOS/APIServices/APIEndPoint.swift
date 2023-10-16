@@ -7,29 +7,6 @@
 
 import Foundation
 
-//struct APIEndpoint {
-//    enum RequestType: String {
-//        case get = "GET"
-//        case post = "POST"
-//    }
-//
-//    let url: String
-//    let requestType: RequestType
-//    let parameters: [String: Any]?
-//    let headers: [String: Any]?
-//
-//    func createHeaders() -> [String: Any] {
-//        var headers = ["Content-Type": "application/json"]
-//        if let additionalHeaders = self.headers {
-//            for header in additionalHeaders {
-//                headers[header.key] = header.value as? String
-//            }
-//        }
-//
-//        return headers
-//    }
-//}
-
 enum APIEndpoint {
     case getLiveNews
 }

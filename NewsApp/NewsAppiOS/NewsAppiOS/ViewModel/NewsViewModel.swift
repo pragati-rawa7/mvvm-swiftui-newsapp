@@ -28,7 +28,7 @@ enum DataLoadingState<T>: Equatable {
 
 class NewsViewModel: ObservableObject {
     @MainActor @Published var newsList: [NewsData]?
-    @MainActo @Published private(set) var error: NetworkingError?
+    @MainActor @Published private(set) var error: NetworkingError?
     @MainActor @Published private (set) var state : DataLoadingState<Void> = .loading
     
     private let apiService: APIServiceProtocol!
